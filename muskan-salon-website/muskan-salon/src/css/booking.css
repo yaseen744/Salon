@@ -1,0 +1,192 @@
+.booking-section {
+  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-nude) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.booking-section::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(201, 169, 110, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.booking-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  background-color: var(--color-white);
+  border-radius: 30px;
+  padding: 40px 28px;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .booking-wrapper {
+    grid-template-columns: 1fr 1fr;
+    padding: 64px 70px;
+    gap: 80px;
+    align-items: center;
+  }
+}
+
+.booking-content .section-label {
+  justify-content: flex-start;
+}
+
+.booking-content .section-title {
+  text-align: left;
+  font-size: 44px;
+  line-height: 1.1;
+}
+
+.booking-content .section-divider {
+  margin: 18px 0 30px;
+}
+
+.booking-text {
+  font-size: 17px;
+  color: var(--color-charcoal);
+  margin-bottom: 36px;
+  line-height: 1.85;
+}
+
+.booking-features {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.booking-feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-serif);
+  font-size: 18px;
+  color: var(--color-dark);
+}
+
+.feature-icon {
+  color: var(--color-gold);
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+/* Form */
+.booking-form-container {
+  background-color: var(--color-cream);
+  padding: 36px 32px;
+  border-radius: 22px;
+  border: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+  .booking-form-container {
+    padding: 42px;
+  }
+}
+
+.booking-form-title {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  color: var(--color-dark);
+  margin-bottom: 28px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 480px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-dark);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select {
+  padding: 13px 16px;
+  border: 1.5px solid var(--color-border);
+  border-radius: 10px;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  transition: var(--transition);
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.12);
+}
+
+.form-group input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.btn-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 16px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 8px;
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.32);
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  letter-spacing: 0.5px;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1da851;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(37, 211, 102, 0.42);
+}
+
+.form-note {
+  text-align: center;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
