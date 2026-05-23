@@ -1,4 +1,4 @@
-import { Instagram, Facebook, MessageCircle, MapPin, Phone, Clock } from 'lucide-react';
+import { Mail, Facebook, MessageCircle, MapPin, Phone, Clock } from 'lucide-react';
 import '../css/footer.css';
 
 export default function Footer() {
@@ -22,7 +22,7 @@ export default function Footer() {
               Karachi's Premier Women's Beauty Parlour — where beauty meets elegance and every visit is a luxurious experience.
             </p>
             <div className="social-links">
-              <a href="#" className="social-link" aria-label="Instagram"><Instagram size={18} /></a>
+             <a href="https://mail.google.com/mail/?view=cm&to=muskaansalon94@gmail.com" target="_blank" className="social-link" aria-label="Gmail"><Mail size={18} /></a>
               <a href="#" className="social-link" aria-label="Facebook"><Facebook size={18} /></a>
               <a href="https://wa.me/923272464710" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="WhatsApp">
                 <MessageCircle size={18} />
