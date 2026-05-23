@@ -22,7 +22,7 @@ export default function Footer() {
               Karachi's Premier Women's Beauty Parlour — where beauty meets elegance and every visit is a luxurious experience.
             </p>
             <div className="social-links">
-             <a href="https://mail.google.com/mail/?view=cm&to=muskaansalon94@gmail.com" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Gmail"><Mail size={18} /></a>
+             <a href="mailto:muskaansalon94@gmail.com" className="social-link" aria-label="Gmail"><Mail size={18} /></a>
               <a href="#" className="social-link" aria-label="Facebook"><Facebook size={18} /></a>
               <a href="https://wa.me/923272464710" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="WhatsApp">
                 <MessageCircle size={18} />
